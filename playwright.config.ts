@@ -31,7 +31,8 @@ export default defineConfig({
   globalSetup: require.resolve('./global-Setup/global_setup'),
   use: {
     storageState: './storage/state.json',
-    headless:true,
+    baseURL: 'https://orgfarm-3fe5b17d48-dev-ed.develop.my.salesforce.com/',
+    headless: false,
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
 
